@@ -1,0 +1,25 @@
+{
+  "name": "interview_programming_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "start_dev": "concurrently \"npm run server_dev\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "server": "node server/index.js",
+    "server_dev": "nodemon server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Ho Zhen Hui",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.1"
+  }
+}
